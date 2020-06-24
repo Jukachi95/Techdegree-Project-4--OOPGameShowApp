@@ -6,9 +6,12 @@
 
      constructor(){
             missed: 0
-            phrase: this.createPhrases()
+            phrases: this.createPhrases()
             activePhrase: null
      }
+
+    //  Method that will create new phrases
+    // Method 1: Create an array and push new items to it
 
      createPhrases(){
          let phrases = []
