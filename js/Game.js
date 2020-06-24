@@ -6,12 +6,12 @@
 
      constructor(){
             missed: 0
-            phrase: []
+            phrase: this.createPhrases()
             activePhrase: null
      }
 
      createPhrases(){
-         
+         let phrases = []
      }
 
     //  
