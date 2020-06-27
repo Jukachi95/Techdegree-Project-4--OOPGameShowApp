@@ -5,26 +5,23 @@
  class Game {
 
      constructor(){
-            missed: 0
-            phrases: this.createPhrases()
-            activePhrase: null
+            this.missed = 0
+            this.phrases = this.createPhrases()
+            this.activePhrase = null
      }
 
     //  Method that will create new phrases
     // Method 1: Create an array and push new items to it
 
      createPhrases(){
-         let phrases = []
+         let phrases = [new Phrase("Hey"), new Phrase("Hi"), new Phrase("Come with me if you want to live")]
 
-         let phrase = new Phrase(["You forget a thousand things everyday"], ["Im lovin it"])
-
-         for(let i = 0; i < phrase.length; i++){
-
+         
     
-            phrases.push(phrase)
-         }
+            
+         
 
-         return phrases
+         return phrases 
      }
 
     //  
@@ -33,9 +30,14 @@
 
      }
 
-    //  
+    //  Gets random phrases that are created in the createPhrases method
      getRandomPhrase(){
+            
+        let randomPhrase = this.phrases;
 
+       let randomNum =  Math.floor(Math.random() * randomPhrase.length)
+
+       return randomPhrase[randomNum]
      }
 
     //  
