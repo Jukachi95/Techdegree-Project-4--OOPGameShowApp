@@ -14,11 +14,9 @@
     // Method 1: Create an array and push new items to it
 
      createPhrases(){
-         let phrases = [new Phrase("Hey"), new Phrase("Hi"), new Phrase("Come with me if you want to live")]
 
-         
-    
-            
+        // An array of new Phrase obects that will be looped through
+         let phrases = [new Phrase("You forget a 1000 things everyday"), new Phrase("Avengers, Assemble"), new Phrase("Come with me if you want to live")]
          
 
          return phrases 
@@ -32,6 +30,7 @@
 
     //  Gets random phrases that are created in the createPhrases method
      getRandomPhrase(){
+         
             
         let randomPhrase = this.phrases;
 
