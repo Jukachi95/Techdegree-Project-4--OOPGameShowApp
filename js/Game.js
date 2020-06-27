@@ -30,13 +30,17 @@
 
     //  Gets random phrases that are created in the createPhrases method
      getRandomPhrase(){
-         
-            
-        let randomPhrase = this.phrases;
+   
+             // Select the phrases that will be looped through and store it in a variable
+             let randomPhrase = this.phrases;
 
-       let randomNum =  Math.floor(Math.random() * randomPhrase.length)
+            // Use the Math.floor + Math.random methods to generate a random number 
+            // based on how many phrases there are
+             let randomNum =  Math.floor(Math.random() * randomPhrase.length)
 
-       return randomPhrase[randomNum]
+            // Because the randomPhrase variable is an array, the random number generated 
+            // in the randomNum variable can be used as a placeholder value in the bracket notation
+             return randomPhrase[randomNum]
      }
 
     //  
