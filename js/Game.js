@@ -10,7 +10,7 @@
             this.activePhrase = null
      }
 
-    //  Method that will create new phrases
+    // Method that will create new phrases
     // Method 1: Create an array and push new items to it
 
      createPhrases(){

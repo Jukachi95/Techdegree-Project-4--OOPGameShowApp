@@ -8,7 +8,21 @@
      }
 
 
-     addPhraseDisplay(){
+     addPhraseToDisplay(){
+
+        // Adds placeholders to the display
+
+        let phraseDisplay = this.phrase;
+
+        phraseDisplay.forEach((phrase)=>{
+
+                
+
+        })
+
+
+
+
 
      }
 
