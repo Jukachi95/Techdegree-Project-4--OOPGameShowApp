@@ -8,43 +8,41 @@
      }
 
 
+
+     // Adds placeholders to the display
      addPhraseToDisplay(){
 
-        // Adds placeholders to the display
+        
 
+        // Select the phrase
         let phraseDisplay = this.phrase;
 
-        phraseDisplay.forEach((phrase)=>{
+        // Create list items that will be added to phrase 
+        // ** let listItem = document.createElement('li'); **
 
-                // get the phrase
-                // split the phrase into separate divs
+        for(let i = 0; i < phraseDisplay.length; i++){
 
-                let splitPhrase = phrase.split
+            // Select the ul to where the phrases will be inserted
+           let ul = document.querySelector('ul')
 
-                let displayPhrase = `
-                <div id="phrase" class="section">
-                      <ul>
-                             <li class="hide letter h">${splitPhrase[0]}</li>
-                             <li class="hide letter o">splitPhrase</li>
-                            <li class="hide letter w">w</li>
-                             <li class="space"> </li>
-                              <li class="hide letter a">a</li>
-                              <li class="hide letter r">r</li>
-                             <li class="hide letter e">e</li>
-                             <li class="space"> </li>
-                             <li class="hide letter y">y</li>
-                             <li class="hide letter o">o</li>
-                              <li class="hide letter u">u</li>
-                     </ul>
-            </div>
-                
-                `
+            // Split the phrase to get individual letters
+            let splitPhrase = phraseDisplay.split("")
 
-                return displayPhrase
-
-        })
+            // If there is a space in the phrase, add the space class, if not add hidden class 
+            
+            if()
 
 
+             let renderedList = `
+             <div id="phrase" class="section">
+             <li class = "letters">${phraseDisplay[i]}</li>`
+             return renderedList
+
+            
+
+        }
+
+        
 
 
 
