@@ -38,25 +38,18 @@
                             // If it is a space, add the "space class"
                             splitPhrase[i].setAttribute('class', 'space')
 
-                        } else{
+                        }else{
                             // If it is a letter, add the "letter" class
                             splitPhrase[i].setAttribute('class', 'letter')
                         }
                     }
 
 
-                        let rendered = `
-                        <div id="phrase" class="section">
-                        <li class = "letters">${splitPhrase[i]}</li>`
+                        // let rendered = `
+                        
+                        // <li class = "">${splitPhrase[i]}</li>`
 
-                        ul.appendChild(rendered)
-
-            
-
-    
-
-        
-
+                        // ul.appendChild(rendered)
 
 
      }
