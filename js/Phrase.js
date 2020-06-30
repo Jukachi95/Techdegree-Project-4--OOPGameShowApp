@@ -36,6 +36,7 @@
                                 for(let i = 0; i < splitPhrase.length; i++){
                                     if(splitPhrase[i] == ""){
                                         // If it is a space, add the "space class"
+                                        // DO setAttribute on the li, not the string
                                         splitPhrase[i].setAttribute('class', 'space')
 
                                     }else{
