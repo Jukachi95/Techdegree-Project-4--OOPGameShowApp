@@ -38,7 +38,8 @@
                                         // If it is a space, add the "space class"
                                         // DO setAttribute on the li, not the string
                                         listItem.setAttribute('class', 'space')]
-                                        // Inside the listItem will be the splitPhrase[i]?
+                                        // Inside the listItem will be the splitPhrase[i]? 
+                                        // Insert or appended?
 
                                     }else{
                                         // If it is a letter, add the "letter" class
