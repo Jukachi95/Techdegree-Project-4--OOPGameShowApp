@@ -17,7 +17,7 @@
                     let phraseDisplay = this.phrase;
 
                     // Create list items that will be added to phrase 
-                    // ** let listItem = document.createElement('li'); **
+                     let listItem = document.createElement('li'); 
 
 
                     // Select the ul to where the phrases will be inserted
@@ -37,11 +37,12 @@
                                     if(splitPhrase[i] == ""){
                                         // If it is a space, add the "space class"
                                         // DO setAttribute on the li, not the string
-                                        splitPhrase[i].setAttribute('class', 'space')
+                                        listItem.setAttribute('class', 'space')]
+                                        // Inside the listItem will be the splitPhrase[i]?
 
                                     }else{
                                         // If it is a letter, add the "letter" class
-                                        splitPhrase[i].setAttribute('class', 'letter')
+                                        listItem.setAttribute('class', 'letter')
                                     }
                                 }
 
