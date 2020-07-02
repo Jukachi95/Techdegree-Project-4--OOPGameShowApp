@@ -29,7 +29,9 @@
                     // Split the phrase to get individual letters
                     let splitPhrase = phraseDisplay.split("")
 
-
+  
+                // hAVE A VARIABLE THAT WILL BE APPENDED TO +=, THAT WILL THEN BE INSERTED INTO THE DOM 
+                // The variable will be empty and will be appended to ul and be made up of strings?
 
                 // If there is a space in the phrase, add the space class, if not add hidden class 
                 
