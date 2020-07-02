@@ -34,16 +34,20 @@
                 // If there is a space in the phrase, add the space class, if not add hidden class 
                 
                                 for(let i = 0; i < splitPhrase.length; i++){
-                                    if(splitPhrase[i] == ""){
+                                    if(splitPhrase[i] == " "){
                                         // If it is a space, add the "space class"
                                         // DO setAttribute on the li, not the string
-                                        listItem.setAttribute('class', 'space')]
+                                        listItem.setAttribute('class', 'space')
+                                        listItem.innerHTML = splitPhrase[i]
+                                        ul.appendChild(listItem)
                                         // Inside the listItem will be the splitPhrase[i]? 
                                         // Insert or appended?
 
                                     }else{
                                         // If it is a letter, add the "letter" class
                                         listItem.setAttribute('class', 'letter')
+                                        listItem.innerHTML = splitPhrase[i]
+                                        ul.appendChild(listItem)
                                     }
                                 }
 
@@ -52,7 +56,7 @@
                                 
                                 // <li class = "">${splitPhrase[i]}</li>`
 
-                                // ul.appendChild(rendered)
+                                
 
      }
 
