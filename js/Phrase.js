@@ -33,15 +33,19 @@
                 // hAVE A VARIABLE THAT WILL BE APPENDED TO +=, THAT WILL THEN BE INSERTED INTO THE DOM 
                 // The variable will be empty and will be appended to ul and be made up of strings?
 
+                let listElement = ''
+
                 // If there is a space in the phrase, add the space class, if not add hidden class 
                 
+
                                 for(let i = 0; i < splitPhrase.length; i++){
                                     if(splitPhrase[i] == " "){
                                         // If it is a space, add the "space class"
                                         // DO setAttribute on the li, not the string
                                         listItem.setAttribute('class', 'space')
                                         listItem.innerHTML = splitPhrase[i]
-                                        ul.appendChild(listItem)
+                                        listElement += listItem
+                                        // ul.appendChild(listItem)
                                         // Inside the listItem will be the splitPhrase[i]? 
                                         // Insert or appended?
 
@@ -49,10 +53,12 @@
                                         // If it is a letter, add the "letter" class
                                         listItem.setAttribute('class', 'letter')
                                         listItem.innerHTML = splitPhrase[i]
-                                        ul.appendChild(listItem)
+                                        listElement += listItem
+                                        // ul.appendChild(listItem)
                                     }
                                 }
 
+                                ul.appendChild()
 
                                 // let rendered = `
                                 
