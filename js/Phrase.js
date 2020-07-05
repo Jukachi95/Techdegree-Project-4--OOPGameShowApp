@@ -65,6 +65,8 @@
                                             
                                 }
 
+                                // The listElement variable that has been storing the li's 
+                                // from the loop, is now added to the ul 
                                 ul.innerHTML = `${listElement}`
                          
 
