@@ -58,7 +58,7 @@
                                     }
                                 }
 
-                                ul.appendChild()
+                                ul.innerHTML = listElement
 
                                 // let rendered = `
                                 
