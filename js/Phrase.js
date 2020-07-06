@@ -17,7 +17,7 @@
                     let phraseDisplay = this.phrase;
 
 
-                    let liEl = document.createElement('li');  
+                    
 
 
                     // Select the ul to where the phrases will be inserted
@@ -36,29 +36,40 @@
 
                 // If there is a space in the phrase, add the space class, if not add hidden class 
                 
+               
 
                                 for(let i = 0; i < splitPhrase.length; i++){
+                                    
+                                    // Create the li Element inside the loop
+                                    let liEl = document.createElement('li');  
+                                    
 
 
-                                            if(splitPhrase[i] == " "){
-                                                
+                                            if(splitPhrase[i] == ""){
+                                                                   
                                                         // Add the class name for space
                                                         liEl.className = 'space'
 
                                                         // Add the text from the index to the li element
-                                                        liEl.textContent = `${splitPhrase[i]}`
+                                                        liEl.innerHTML = `${splitPhrase[i]}`
 
-                                                        // Concatenate the li element to the empty string
-                                                        listElement += liEl
+                                                        // Append the li Element to the ul
+                                                        ul.appendChild(liEl)
+                                                        
                                             
                                             
                                             }else{
                                                 // If it is a letter, add the "letter" class
 
-                                                        
+                                                        // Add the class name for space
                                                         liEl.className = `hide letter ${splitPhrase[i]}`
-                                                        liEl.textContent = `${splitPhrase[i]}`
-                                                        listElement += `${liEl}`
+                                                       
+                                                       // Add the text from the index to the li element
+                                                        liEl.innerHTML = `${splitPhrase[i]}`
+                                                        
+                                                        // Append the li Element to the ul
+                                                        ul.appendChild(liEl)
+                                                        
                                             
                                                 
                                             }
@@ -66,8 +77,8 @@
                                 }
 
                                 // The listElement variable that has been storing the li's 
-                                // from the loop, is now added to the ul 
-                                ul.innerHTML = `${listElement}`
+                                // from the loop, is now added to the ul
+                                
                          
 
      }
