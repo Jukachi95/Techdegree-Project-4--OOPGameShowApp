@@ -26,6 +26,13 @@
 
      startGame(){
 
+        // Select the overlay
+        let overlay = document.getElementById('overlay');
+
+        // Hide the overlay
+        // If this doesnt work, try using and researching other values such as display: none 
+
+        overlay.style.display = hidden
      }
 
     //  Gets random phrases that are created in the createPhrases method
