@@ -37,7 +37,10 @@
                 let rPhrase = this.getRandomPhrase()
 
                 // Call the addPhraseToDisplay method
-                rPhrase.Phrase.addPhraseToDisplay()
+                rPhrase.Phrase.addPhraseToDisplay();
+
+                // The activePhrase property should be equal to the selected phrase
+                this.activePhrase = rPhrase
                 
      }
 
