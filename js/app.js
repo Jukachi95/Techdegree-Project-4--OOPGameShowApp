@@ -11,13 +11,13 @@ let logPhrase = (phrase)=> {console.log(phrase.phrase)}
 
 // Instantiate new Game object
 let game = new Game()
-
+game.startGame()
 // const randomPhrase = game.getRandomPhrase()
 // const phrase = new Phrase(randomPhrase.phrase)
 // phrase.addPhraseToDisplay()
 
 // Call the methods on the game variable
-game.getRandomPhrase().addPhraseToDisplay()
+
 
 
 
