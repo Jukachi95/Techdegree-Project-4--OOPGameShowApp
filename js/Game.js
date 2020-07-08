@@ -31,16 +31,14 @@
 
                 // Hide the overlay
                 // ** If this doesnt work, try using and researching other values such as display: none **
-                overlay.style.display = 'hidden'
+                overlay.style.display = 'none'
 
                 // Call the getRandomPhrase method to generate a random phrase
                 let rPhrase = this.getRandomPhrase()
 
-                // New Phrase object instantiate
-                // let newPhrase = new Phrase()
 
                 // Call the addPhraseToDisplay method
-                rPhrase.newPhrase.addPhraseToDisplay();
+                rPhrase.addPhraseToDisplay();
 
                 // The activePhrase property should be equal to the selected phrase
                 this.activePhrase = rPhrase
