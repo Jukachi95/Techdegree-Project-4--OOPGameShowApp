@@ -19,7 +19,7 @@ document.getElementById('btn__reset').addEventListener('click',()=>{
     // Instantiate a new Game object within the game variable
     game = new Game()
 
-    // Call the startGa
+    // Call the startGame method on the newly created Game object
     game.startGame()
 })
 
