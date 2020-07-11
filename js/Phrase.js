@@ -87,6 +87,8 @@
     //  Checks to see if the letter typed is a match in the phrase
      checkLetter(){
 
+        // Check the typed letter
+        // let pressedKey = document.addEventListener('keydown')??
      }
 
 
