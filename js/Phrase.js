@@ -84,7 +84,7 @@
      }
 
 
-     
+    //  Checks to see if the letter typed is a match in the phrase
      checkLetter(){
 
      }
