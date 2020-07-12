@@ -91,7 +91,10 @@
         let pressedKey = document.addEventListener('keydown')
 
         // Check if the letter pressed matches any of the letters in the phrase
-        if(pressedKey ==)
+        // May need to loop through items of the phrase
+        if(pressedKey == this.phrase){
+            console.log("true")
+        }
      }
 
 
