@@ -88,7 +88,9 @@
      checkLetter(){
 
         // Store the pressed letter in a variable
-        let pressedKey = document.addEventListener('keydown')
+        let pressedKey = document.addEventListener('keydown', ()=>{
+            
+        })
 
         // Check if the letter pressed matches any of the letters in the phrase
         // May need to loop through items of the phrase
