@@ -92,9 +92,16 @@
 
         // Check if the letter pressed matches any of the letters in the phrase
         // May need to loop through items of the phrase
-        if(pressedKey == this.phrase){
-            console.log("true")
+
+        for(let i = 0; i < this.phrase.length; i++){
+
+            if(pressedKey == this.phrase[i]){
+                console.log("true")
+            }
+
         }
+
+       
      }
 
 
