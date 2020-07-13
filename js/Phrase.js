@@ -109,7 +109,11 @@
      }
 
 
-     showMatchedLetter(){
+     showMatchedLetter(letter){
+
+        // Displays the matched letter on the screen
+        // -- Unhide the letter, by selecting it on the DOM and changing CSS Styling --
+
          
      }
 
