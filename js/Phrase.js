@@ -86,7 +86,7 @@
 
     //  Checks to see if the letter typed is a match in the phrase
     // Parameter will be a etter to check
-     checkLetter(){
+     checkLetter(letter){
 
         // Store the pressed letter in a variable
              document.addEventListener('keydown', (e)=>{
