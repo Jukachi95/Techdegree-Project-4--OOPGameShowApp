@@ -89,17 +89,19 @@
      checkLetter(letter){
 
         // Store the pressed letter in a variable
-             document.addEventListener('keydown', (e)=>{
+            //  document.addEventListener('keydown', (e)=>{
 
                     for(let i = 0; i < this.phrase.length; i++){
 
-                        if(e.target == this.phrase[i]){
+                        if(letter == this.phrase[i]){
                             console.log("true")
+                        } else{
+                            console.log("false")
                         }
             
                     }
 
-        })
+        // })
 
         // Check if the letter pressed matches any of the letters in the phrase
         // May need to loop through items of the phras
