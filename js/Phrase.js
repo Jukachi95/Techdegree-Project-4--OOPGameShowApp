@@ -84,12 +84,12 @@
      }
 
 
-    //  Checks to see if the letter typed is a match in the phrase
-    // Parameter will be a etter to check
+     //  Checks to see if the letter typed is a match in the phrase
+    // Parameter will be a letter to check
      checkLetter(letter){
 
         // Store the pressed letter in a variable
-            //  document.addEventListener('keydown', (e)=>{
+           
 
                     for(let i = 0; i < this.phrase.length; i++){
 
@@ -101,7 +101,7 @@
             
                     }
 
-        // })
+        
 
         // Check if the letter pressed matches any of the letters in the phrase
         // May need to loop through items of the phras
