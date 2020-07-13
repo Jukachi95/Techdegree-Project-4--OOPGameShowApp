@@ -114,6 +114,16 @@
         // Displays the matched letter on the screen
         // -- Unhide the letter, by selecting it on the DOM and changing CSS Styling --
 
+        // Grab the information that the user pressed/wants checked
+        // Check if it is on the display
+
+        // ---> Check if it is true??
+       let match = this.checkLetter() == true
+
+       
+        // If checkLetter is true, show the letter on screen
+        // By removing its design  
+
          
      }
 
