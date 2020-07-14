@@ -120,6 +120,13 @@
         // ---> Check if it is true??
        let matchLetter = game.activePhrase.checkLetter(letter)
 
+    //    Check the string in the addPhraseToDisplay
+    // Loop through it
+
+    // Check if the letter is on the DOM using querySelectorAll. AddPhraseToDisplay had
+    // the right idea, but get the info from the display using querySelectorAll to select
+    // All instances of that letter
+       matchLetter === document.querySelector(`${letter}`)
        
         // If checkLetter is true, show the letter on screen
         // document.querySelectorAll('hide') + 'letter'
