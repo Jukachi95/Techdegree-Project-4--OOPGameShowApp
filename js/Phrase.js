@@ -118,10 +118,13 @@
         // Check if it is on the display
 
         // ---> Check if it is true??
-       let match = this.checkLetter() == true
+       let matchLetter = game.activePhrase.checkLetter(letter)
 
        
         // If checkLetter is true, show the letter on screen
+        // document.querySelectorAll('hide') + 'letter'
+        // or an if statement to check if there is a class of hide and if the letter is a match
+
         // By removing its design  
 
          
