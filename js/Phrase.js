@@ -117,8 +117,9 @@
         // Grab the information that the user pressed/wants checked
         // Check if it is on the display
 
-        // ---> Check if it is true??
-       let matchLetter = game.activePhrase.checkLetter(letter)
+        
+        // This was initially looping through the phrase, as the checkLetter method is being called
+       let matchLetter = game.activePhrase.checkLetter(`${letter}`)
 
     //    Check the string in the addPhraseToDisplay
     // Loop through it
