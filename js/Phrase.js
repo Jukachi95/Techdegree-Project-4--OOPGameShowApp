@@ -126,7 +126,16 @@
     // Check if the letter is on the DOM using querySelectorAll. AddPhraseToDisplay had
     // the right idea, but get the info from the display using querySelectorAll to select
     // All instances of that letter
-       matchLetter === document.querySelector(`${letter}`)
+
+    // If it exists, or there are instances of it, hide?
+       if(document.querySelectorAll(`${matchLetter}`)){
+
+        // Letter that has been selected and is now on the phrase display
+        let selectedLetter = document.querySelectorAll(`${matchLetter}`)
+
+        // 
+
+       }
        
         // If checkLetter is true, show the letter on screen
         // document.querySelectorAll('hide') + 'letter'
