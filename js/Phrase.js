@@ -133,7 +133,8 @@
         // Letter that has been selected and is now on the phrase display
         let selectedLetter = document.querySelectorAll(`${matchLetter}`)
 
-        // 
+        // Remove the styling, and make it show
+        selectedLetter.className = `show letter ${matchLetter}`
 
        }
        
