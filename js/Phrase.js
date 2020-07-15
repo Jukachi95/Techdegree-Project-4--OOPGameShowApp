@@ -128,7 +128,7 @@
     // All instances of that letter
 
     // If it exists, or there are instances of it, hide?
-       if(document.querySelectorAll(`${matchLetter}`)){
+       if(document.querySelectorAll(`hide letter ${matchLetter}`)){
 
         // Letter that has been selected and is now on the phrase display
         let selectedLetter = document.querySelectorAll(`${matchLetter}`)
