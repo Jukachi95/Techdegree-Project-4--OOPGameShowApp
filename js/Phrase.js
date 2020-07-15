@@ -127,7 +127,7 @@
     // the right idea, but get the info from the display using querySelectorAll to select
     // All instances of that letter
 
-    // If it exists, or there are instances of it, hide?
+    // If it exists, or there are instances of it, show?
        if(document.querySelectorAll(`hide letter ${matchLetter}`)){
 
         // Letter that has been selected and is now on the phrase display
