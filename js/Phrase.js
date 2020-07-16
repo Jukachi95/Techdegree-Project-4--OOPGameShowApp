@@ -132,7 +132,7 @@
        if(document.querySelectorAll(`hide letter ${matchLetter}`)){
 
         // Letter that has been selected and is now on the phrase display
-        let selectedLetter = document.querySelectorAll(`${matchLetter}`)
+        let selectedLetter = document.querySelectorAll(`hide letter ${matchLetter}`)
 
         // Remove the styling, and make it show
         selectedLetter.className = `show letter ${matchLetter}`
