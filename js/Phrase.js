@@ -129,10 +129,10 @@
     // All instances of that letter
 
     // If it exists, or there are instances of it, show?
-       if(document.querySelectorAll(`hide letter ${matchLetter}`)){
+       if(document.querySelectorAll(`.hide letter ${matchLetter}`)){
 
         // Letter that has been selected and is now on the phrase display
-        let selectedLetter = document.querySelectorAll(`hide letter ${matchLetter}`)
+        let selectedLetter = document.querySelectorAll(`.hide letter ${matchLetter}`)
 
         // Remove the styling, and make it show
         selectedLetter.className = `show letter ${matchLetter}`
