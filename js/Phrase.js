@@ -119,7 +119,7 @@
 
         
         // This was initially looping through the phrase, as the checkLetter method is being called
-       let matchLetter = game.activePhrase.checkLetter(`${letter}`)
+       let matchLetter = letter
 
     //    Check the string in the addPhraseToDisplay
     // Loop through it
