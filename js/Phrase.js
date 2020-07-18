@@ -119,7 +119,7 @@
 
         
         // This was initially looping through the phrase, as the checkLetter method is being called
-       let matchLetter = letter
+       let matchLetter = document.querySelector(letter)
 
     //    Check the string in the addPhraseToDisplay
     // Loop through it
