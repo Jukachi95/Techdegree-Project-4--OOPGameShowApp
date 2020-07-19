@@ -109,20 +109,13 @@
      }
 
 
+     // Displays the matched letter on the screen
      showMatchedLetter(letter){
 
-        // Displays the matched letter on the screen
-        // -- Unhide the letter, by selecting it on the DOM and changing CSS Styling --
-
-
         
-        // This was initially looping through the phrase, as the checkLetter method is being called
-       let matchLetter = letter
-
-    //    Check the string in the addPhraseToDisplay
-    // Loop through it
-
+        // -- Show the letter, by selecting it on the DOM and changing CSS Styling --
        
+        // Using the DOM, select the 
         let li = document.querySelectorAll('li')
         // console.log(li)
        
