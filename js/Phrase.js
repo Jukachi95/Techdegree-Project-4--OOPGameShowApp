@@ -91,15 +91,15 @@
         // Store the pressed letter in a variable
            
 
-                    for(let i = 0; i < this.phrase.length; i++){
+                  
 
-                        if(letter == this.phrase[i]){
+                        if(this.phrase.includes(letter)){
                             console.log("true")
                         } else{
                             console.log("false")
                         }
             
-                    }
+                
 
         
 
@@ -114,12 +114,10 @@
         // Displays the matched letter on the screen
         // -- Unhide the letter, by selecting it on the DOM and changing CSS Styling --
 
-        // Grab the information that the user pressed/wants checked
-        // Check if it is on the display
 
         
         // This was initially looping through the phrase, as the checkLetter method is being called
-       let matchLetter = document.querySelector(letter)
+       let matchLetter = document.querySelector(`.hide letter ${letter}`)
 
     //    Check the string in the addPhraseToDisplay
     // Loop through it
@@ -129,10 +127,10 @@
     // All instances of that letter
 
     // If it exists, or there are instances of it, show?
-       if(document.querySelectorAll(`.hide letter ${matchLetter}`)){
+       if(document.querySelector(`.${matchLetter}`)){
 
         // Letter that has been selected and is now on the phrase display
-        let selectedLetter = document.querySelectorAll(`.hide letter ${matchLetter}`)
+        let selectedLetter = document.querySelectorAll(`.${matchLetter}`)
 
         // Remove the styling, and make it show
         selectedLetter.className = `show letter ${matchLetter}`
