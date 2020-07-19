@@ -117,7 +117,7 @@
 
         
         // This was initially looping through the phrase, as the checkLetter method is being called
-       let matchLetter = document.querySelector(`.hide letter ${letter}`)
+       let matchLetter = checkLetter(letter)
 
     //    Check the string in the addPhraseToDisplay
     // Loop through it
@@ -127,13 +127,13 @@
     // All instances of that letter
 
     // If it exists, or there are instances of it, show?
-       if(document.querySelector(`.${matchLetter}`)){
+       if(matchLetter == true){
 
         // Letter that has been selected and is now on the phrase display
-        let selectedLetter = document.querySelectorAll(`.${matchLetter}`)
+        let selectedLetter = document.querySelectorAll(`.${letter}`)
 
         // Remove the styling, and make it show
-        selectedLetter.className = `show letter ${matchLetter}`
+        selectedLetter.className = `show letter ${letter}`
 
        }
        
