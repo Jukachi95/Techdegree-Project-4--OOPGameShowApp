@@ -117,25 +117,24 @@
 
         
         // This was initially looping through the phrase, as the checkLetter method is being called
-       let matchLetter = checkLetter(letter)
+       let matchLetter = letter
 
     //    Check the string in the addPhraseToDisplay
     // Loop through it
 
-    // Check if the letter is on the DOM using querySelectorAll. AddPhraseToDisplay had
-    // the right idea, but get the info from the display using querySelectorAll to select
-    // All instances of that letter
+       
+        let li = document.querySelectorAll('li')
+        // console.log(li)
+       
+        // if the li equals the 'letter', change the class to show it
 
-    // If it exists, or there are instances of it, show?
-       if(matchLetter == true){
+        for(let i = 0; i < li.length; i++){
+            if(li[i].innerText == letter){
+                li[i].className = `show letter ${letter}`
+            }
+        }
 
-        // Letter that has been selected and is now on the phrase display
-        let selectedLetter = document.querySelectorAll(`.${letter}`)
-
-        // Remove the styling, and make it show
-        selectedLetter.className = `show letter ${letter}`
-
-       }
+        
        
         // If checkLetter is true, show the letter on screen
         // document.querySelectorAll('hide') + 'letter'
@@ -163,3 +162,15 @@
                                         // Inside the listItem will be the splitPhrase[i]? 
                                         // Insert or appended?
                                         // ul.appendChild(listItem)
+
+
+                                    //     for(let i = 0; i < this.phrase.length; i++){
+
+                                    //         if()
+                                    //             // Letter that has been selected and is now on the phrase display
+                                    //             let selectedLetter = document.querySelectorAll(`.${letter}`)
+                                
+                                    //             // Remove the styling, and make it show
+                                    //             selectedLetter.className = `show letter ${letter}`
+                                
+                                    //    }
