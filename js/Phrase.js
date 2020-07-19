@@ -122,6 +122,9 @@
         // if the li equals the 'letter', change the class to show it
 
         for(let i = 0; i < li.length; i++){
+
+            // Loop through all the indexes in case the letter appears more than once
+            // Check the innerText/innerHTML value as li[i] is the actual element, not the text
             if(li[i].innerText == letter){
                 li[i].className = `show letter ${letter}`
             }
