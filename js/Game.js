@@ -16,7 +16,7 @@
      createPhrases(){
 
         // An array of new Phrase obects that will be looped through
-         let phrases = [new Phrase("You forget a 1000 things everyday"), new Phrase("Avengers, Assemble"), new Phrase("Come with me if you want to live")]
+         let phrases = [new Phrase("You forget a thousand things everyday"), new Phrase("Avengers, Assemble"), new Phrase("Come with me if you want to live"), new Phrase("Eureka"), new Phrase("Hello World")]
          
 
          return phrases 
