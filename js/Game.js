@@ -80,9 +80,11 @@
                 // Try selecting a single image, then try using querySelectorAll and iterating through
                 // Once replaced, the second heart will then become the first, and will then have an
                 // index of [0] as the previous heart is now empty, therefore that second one is the first
-                let displayHeart = document.querySelectorAll('.tries')[0]
-
-                displayHeart.innerHTML = "img src='images/lostHeart.png' alt='Heart Icon' height='35' width='30'"
+               
+                // Using the console.log() to access the children nodes
+                let displayHeart = document.querySelectorAll('.tries')[0].children[0]
+                displayHeart.src = 'images/lostHeart.png'
+                // displayHeart.src = 'images/lostHeart.png'
 
      }
 
