@@ -70,10 +70,19 @@
 
 
 
-    //  
-     removeLife(){
+    //  Replaces a heart image on the scoreboard with a 'lostHeart' image from the images folder
 
-                
+     removeLife(){
+        
+                // Select one of the heart images
+                // Call it displayHeart to differentiate
+
+                // Try selecting a single image, then try using querySelectorAll and iterating through
+                // Once replaced, the second heart will then become the first, and will then have an
+                // index of [0] as the previous heart is now empty, therefore that second one is the first
+                let displayHeart = document.querySelectorAll('.tries')[0]
+
+                displayHeart.innerHTML = "img src='images/lostHeart.png' alt='Heart Icon' height='35' width='30'"
 
      }
 
