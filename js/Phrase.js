@@ -126,6 +126,9 @@
             // Loop through all the indexes in case the letter appears more than once
             // Check the innerText/innerHTML value as li[i] is the actual element, not the text
             if(li[i].innerText == letter){
+                
+                // Change the class name of the li Element. 
+                // Replace the 'hide' value, with 'show' to reveal it on the display
                 li[i].className = `show letter ${letter}`
             }
         }
