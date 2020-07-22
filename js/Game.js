@@ -83,7 +83,7 @@
                
                 // Using the console.log() to access the children nodes
                 // was previously children[0]
-                let displayHeart = document.querySelectorAll('.tries')[0].children
+                let displayHeart = document.querySelectorAll('.tries').children[0]
                 
                 // displayHeart.src = 'images/lostHeart.png'
 
