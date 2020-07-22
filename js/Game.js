@@ -82,12 +82,24 @@
                 // index of [0] as the previous heart is now empty, therefore that second one is the first
                
                 // Using the console.log() to access the children nodes
-                let displayHeart = document.querySelectorAll('.tries')[0].children[0]
-                displayHeart.src = 'images/lostHeart.png'
+                // was previously children[0]
+                let displayHeart = document.querySelectorAll('.tries')[0].children
+                
                 // displayHeart.src = 'images/lostHeart.png'
 
                 // If the first image has a src of liveHeart.src, then change it's src 
-                if(displayHeart.src == )
+                // If this doesnt work, loop through displayHeart children indexes
+
+                displayHeart.forEach((display)=>{
+
+                    if(display.src != 'images/lostHeart.png' ){
+                        display.src = 'images/lostHeart.png'
+                    }
+                })
+
+                //  
+                
+                
      }
 
     //  
