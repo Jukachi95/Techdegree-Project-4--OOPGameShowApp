@@ -86,7 +86,8 @@
                 displayHeart.src = 'images/lostHeart.png'
                 // displayHeart.src = 'images/lostHeart.png'
 
-                // If the first image has a src of liveHeart.src, then change it's src
+                // If the first image has a src of liveHeart.src, then change it's src 
+                if(displayHeart.src == )
      }
 
     //  
