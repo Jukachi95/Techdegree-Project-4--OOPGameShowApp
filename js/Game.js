@@ -83,10 +83,10 @@
                
                 // Using the console.log() to access the children nodes
                 // was previously children[0]
-                let displayHeart = document.querySelectorAll('li img')
+                let displayHeart = document.querySelector('li img')
                 // console.log(displayHeart)
                 
-                // displayHeart.src = 'images/lostHeart.png'
+                displayHeart.src = 'images/lostHeart.png'
 
                 // Select the first heart img, first heart by default should be lostHeart
                 // displayHeart[0].src = 'images/lostHeart.png'
@@ -94,15 +94,15 @@
                 // 1. nextelementSibling
                 
                 // 2. Changed the index of i to 1, as 0 is already lostHeart
-                for(let i = 1; i < displayHeart.length;i++){
+                // for(let i = 0; i < displayHeart.length;i++){
 
                     
 
                     
-                    if(displayHeart[i].src != 'images/lostHeart.png'){
-                        displayHeart[i].src = 'images/lostHeart.png';
+                    if(displayHeart.nextElementSibling.src != 'images/lostHeart.png'){
+                        displayHeart.nextElementSibling.src = 'images/lostHeart.png';
                     }
-                }
+                // }
 
                 //  
                 
