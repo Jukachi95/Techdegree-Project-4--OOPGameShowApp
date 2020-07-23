@@ -87,6 +87,7 @@
                 // console.log(displayHeart)
                 
                 displayHeart.src = 'images/lostHeart.png'
+                console.log(displayHeart.parentElement.nextElementSibling.children[0].src)
 
                 // Select the first heart img, first heart by default should be lostHeart
                 // displayHeart[0].src = 'images/lostHeart.png'
@@ -99,7 +100,7 @@
                     
 
                     
-                    if(displayHeart.nextElementSibling.src != 'images/lostHeart.png'){
+                    if(!displayHeart.parentElement.nextElementSibling.children[0].src.includes('images/lostHeart.png')){
                         displayHeart.nextElementSibling.src = 'images/lostHeart.png';
                     }
                 // }
