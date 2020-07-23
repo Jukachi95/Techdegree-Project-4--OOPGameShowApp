@@ -89,10 +89,11 @@
                 // displayHeart.src = 'images/lostHeart.png'
 
                 // Select the first heart img, first heart by default should be lostHeart
-                displayHeart[0].src = 'images/lostHeart.png'
-
+                // displayHeart[0].src = 'images/lostHeart.png'
                 
-                // Changed the index of i to 1, as 0 is already lostHeart
+                // 1. nextelementSibling
+                
+                // 2. Changed the index of i to 1, as 0 is already lostHeart
                 for(let i = 1; i < displayHeart.length;i++){
 
                     
