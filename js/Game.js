@@ -88,13 +88,17 @@
                 
                 // displayHeart.src = 'images/lostHeart.png'
 
+                // Select the first heart img, first heart by default should be lostHeart
+                displayHeart[0].src = 'images/lostHeart.png'
 
-                for(let i = 0; i < displayHeart.length;i++){
-
-                    // Select the first heart img
+                
+                // Changed the index of i to 1, as 0 is already lostHeart
+                for(let i = 1; i < displayHeart.length;i++){
 
                     
-                    if(displayHeart[i].src != 'images/lostHeart.png' ){
+
+                    
+                    if(displayHeart[i].src != 'images/lostHeart.png'){
                         displayHeart[i].src = 'images/lostHeart.png';
                     }
                 }
