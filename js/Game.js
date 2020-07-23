@@ -83,20 +83,21 @@
                
                 // Using the console.log() to access the children nodes
                 // was previously children[0]
-                let displayHeart = document.querySelector('li img')
-                console.log(displayHeart)
+                let displayHeart = document.querySelectorAll('li img')
+                // console.log(displayHeart)
                 
                 // displayHeart.src = 'images/lostHeart.png'
 
-                // If the first image has a src of liveHeart.src, then change it's src 
-                // If this doesnt work, loop through displayHeart children indexes
 
-                // displayHeart.forEach((display)=>{
+                for(let i = 0; i < displayHeart.length;i++){
 
-                //     if(display.src != 'images/lostHeart.png' ){
-                //         display.src = 'images/lostHeart.png'
-                //     }
-                // })
+                    // Select the first heart img
+
+                    
+                    if(displayHeart[i].src != 'images/lostHeart.png' ){
+                        displayHeart[i].src = 'images/lostHeart.png';
+                    }
+                }
 
                 //  
                 
@@ -113,3 +114,17 @@
 
      }
  }
+
+
+
+
+ 
+                // If the first image has a src of liveHeart.src, then change it's src 
+                // If this doesnt work, loop through displayHeart children indexes
+
+                // displayHeart.forEach((display, index)=>{
+
+                //     if(display[index].src != 'images/lostHeart.png' ){
+                //         display[index].src = 'images/lostHeart.png'
+                //     }
+                // })
