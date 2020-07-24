@@ -75,7 +75,8 @@
      removeLife(){
         
                 // Select one of the heart images
-                // Call it displayHeart to differentiate
+               this.missed += 1
+
 
                 // Try selecting a single image, then try using querySelectorAll and iterating through
                 // Once replaced, the second heart will then become the first, and will then have an
@@ -83,11 +84,15 @@
                
                 // Using the console.log() to access the children nodes
                 // was previously children[0]
-                let displayHeart = document.querySelector('li img')
-                // console.log(displayHeart)
+                let displayHeart = document.querySelectorAll('li img')
+                // // console.log(displayHeart)
                 
                 displayHeart.src = 'images/lostHeart.png'
-                console.log(displayHeart.parentElement.nextElementSibling.children[0].src)
+ 
+                let displayHeart1 = document.querySelectorAll('li img')[0]
+
+                displayHeart1.src = 'images/lostHeart.png'
+                // console.log(displayHeart.parentElement.nextElementSibling.children[0].src)
 
                 // Select the first heart img, first heart by default should be lostHeart
                 // displayHeart[0].src = 'images/lostHeart.png'
@@ -100,12 +105,18 @@
                     
 
                     
-                    if(!displayHeart.parentElement.nextElementSibling.children[0].src.includes('images/lostHeart.png')){
-                        displayHeart.nextElementSibling.src = 'images/lostHeart.png';
-                    }
+                    // if(!displayHeart.parentElement.nextElementSibling.children[0].src.includes('images/lostHeart.png')){
+
+                    //     // Select the next document li/img 
+                    //     // Another if statement or for Loop
+
+                    //     displayHeart.parentElement.nextElementSibling.children[0].src = 'images/lostHeart.png';
+                    // }
                 // }
 
                 //  
+
+              
                 
                 
      }
