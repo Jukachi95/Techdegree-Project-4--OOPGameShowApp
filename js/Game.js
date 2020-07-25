@@ -74,56 +74,55 @@
 
      removeLife(){
         
-                // Select one of the heart images
-               this.missed += 1
+                // When the method is called, increment +1 to the 'missed' value
+                this.missed += 1
 
-
-                // Try selecting a single image, then try using querySelectorAll and iterating through
-                // Once replaced, the second heart will then become the first, and will then have an
-                // index of [0] as the previous heart is now empty, therefore that second one is the first
                
-                // Using the console.log() to access the children nodes
-                // was previously children[0]
+                // Using the DOM to access the images that are inside the 'li' elements
                 let displayHeart = document.querySelectorAll('li img')
-                // // console.log(displayHeart)
                 
-               
-                // console.log(displayHeart.parentElement.nextElementSibling.children[0].src)
-
-                // Select the first heart img, first heart by default should be lostHeart
-                // displayHeart[0].src = 'images/lostHeart.png'
                 
-                // 1. nextelementSibling
-                
-                // 2. Changed the index of i to 1, as 0 is already lostHeart
+                // Loop through the items as querySelectorAll provides a HTML Collection
                 for(let i = 0; i < displayHeart.length;i++){
 
-                    
-                    // displayHeart[0].src = 'images/lostHeart.png'
-                    
-                    if(this.missed == 1){
-                              
-                    
-                        // Select the next document li/img 
-                        // Another if statement or for Loop
+               
+                                // As this.missed has been incremented, if the value is equal to 1 on the first method call
+                                
+                                if(this.missed == 1){
 
-                        displayHeart[0].src = 'images/lostHeart.png';
+                                            // Then the heart image with an index of [0], will be given a different src attribute
+                                            displayHeart[0].src = 'images/lostHeart.png';
 
-                    } if (this.missed == 2){
 
-                        displayHeart[1].src = 'images/lostHeart.png';
+                                } if (this.missed == 2){  
 
-                    } if(this.missed == 3){
+                                            // If this.missed has been incremented to reach a value of 2, when the method has been called again
+                                            // Then the heart image with an index of [1], will be given a different src attribute
+                                            displayHeart[1].src = 'images/lostHeart.png';
 
-                        displayHeart[2].src = 'images/lostHeart.png';
 
-                    } if(this.missed == 4){
-                        displayHeart[3].src = 'images/lostHeart.png';
+                                } if(this.missed == 3){
 
-                    } if(this.missed == 5){
-                        
-                        displayHeart[4].src = 'images/lostHeart.png';
-                    }
+
+                                            // If this.missed has been incremented to reach a value of 3, when the method has been called again
+                                            // Then the heart image with an index of [2], will be given a different src attribute
+                                            displayHeart[2].src = 'images/lostHeart.png';
+
+
+                                } if(this.missed == 4){
+
+                                             // If this.missed has been incremented to reach a value of 4, when the method has been called again
+                                            // Then the heart image with an index of [3], will be given a different src attribute
+                                             displayHeart[3].src = 'images/lostHeart.png';
+
+                                } if(this.missed == 5){
+
+                                             // If this.missed has been incremented to reach a value of 5, when the method has been called again
+                                            // Then the heart image with an index of [4], will be given a different src attribute
+                                             displayHeart[4].src = 'images/lostHeart.png';
+
+                                            //  Once the value of 5 has been reached, the gameOver() method is called
+                                }
 
 
                 }
