@@ -115,22 +115,25 @@
         
         // -- Show the letter, by selecting it on the DOM and changing CSS Styling --
        
-        // Using the DOM, select the 
+        // Using the DOM, select all the 'li' elements
         let li = document.querySelectorAll('li')
-        // console.log(li)
+        
        
-        // if the li equals the 'letter', change the class to show it
-
+        // Iterate through the 'li' elements
         for(let i = 0; i < li.length; i++){
 
             // Loop through all the indexes in case the letter appears more than once
-            // Check the innerText/innerHTML value as li[i] is the actual element, not the text
+            // Check if the innerText/innerHTML value of li[i] is the same as the letter pased in to the method
             if(li[i].innerText == letter){
                 
-                // Change the class name of the li Element. 
+                // Change the class name of the 'li' 
                 // Replace the 'hide' value, with 'show' to reveal it on the display
                 li[i].className = `show letter ${letter}`
+
+
             }
+
+
         }
 
         
