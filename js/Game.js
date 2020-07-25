@@ -87,11 +87,7 @@
                 let displayHeart = document.querySelectorAll('li img')
                 // // console.log(displayHeart)
                 
-                displayHeart.src = 'images/lostHeart.png'
- 
-                let displayHeart1 = document.querySelectorAll('li img')[0]
-
-                displayHeart1.src = 'images/lostHeart.png'
+               
                 // console.log(displayHeart.parentElement.nextElementSibling.children[0].src)
 
                 // Select the first heart img, first heart by default should be lostHeart
@@ -100,19 +96,37 @@
                 // 1. nextelementSibling
                 
                 // 2. Changed the index of i to 1, as 0 is already lostHeart
-                // for(let i = 0; i < displayHeart.length;i++){
+                for(let i = 0; i < displayHeart.length;i++){
 
                     
-
+                    // displayHeart[0].src = 'images/lostHeart.png'
                     
-                    // if(!displayHeart.parentElement.nextElementSibling.children[0].src.includes('images/lostHeart.png')){
+                    if(this.missed == 1){
+                              
+                    
+                        // Select the next document li/img 
+                        // Another if statement or for Loop
 
-                    //     // Select the next document li/img 
-                    //     // Another if statement or for Loop
+                        displayHeart[0].src = 'images/lostHeart.png';
 
-                    //     displayHeart.parentElement.nextElementSibling.children[0].src = 'images/lostHeart.png';
-                    // }
-                // }
+                    } if (this.missed == 2){
+
+                        displayHeart[1].src = 'images/lostHeart.png';
+
+                    } if(this.missed == 3){
+
+                        displayHeart[2].src = 'images/lostHeart.png';
+
+                    } if(this.missed == 4){
+                        displayHeart[3].src = 'images/lostHeart.png';
+
+                    } if(this.missed == 5){
+                        
+                        displayHeart[4].src = 'images/lostHeart.png';
+                    }
+
+
+                }
 
                 //  
 
