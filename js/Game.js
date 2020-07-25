@@ -141,7 +141,10 @@
 
             // If statement
             // If all the letters have been shown and this.missed!=0, then win?
-            
+            // Select the letters
+
+            // Or try li's with a class of show
+            let display = document.querySelectorAll('ul li')
      }
 
 
