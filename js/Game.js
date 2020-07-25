@@ -134,10 +134,18 @@
                 
      }
 
-    //  
+
+
+    //  Checks to see if the player has revealed all the letters in the activePhrase
      checkForWin(){
 
+            // If statement
+            // If all the letters have been shown and this.missed!=0, then win?
+            
      }
+
+
+
 
     //  
      gameOver(){
