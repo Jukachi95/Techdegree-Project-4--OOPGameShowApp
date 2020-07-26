@@ -139,24 +139,25 @@ class Game {
        //  Checks to see if the player has revealed all the letters in the activePhrase
        checkForWin() {
 
-              // If statement
-              // If all the letters have been shown and this.missed!=0, then win?
-              // Select the letters
 
-              // Or try li's with a class of show
+              // Select all of the li elements
               let displayItems = document.querySelectorAll('ul li');
 
               
-
+              // Loop through the li elements
               for(let i = 0; i < displayItems.length; i++){
-                     // display all the li items
+                     
                      // Check if all the list items in the loop contain the class of show
                      if(displayItems[i].className.includes('show')){
+                            // If all of the 'li' elements contain the class 'show', then return true
                                    return true
                      } else{
+                            // If all of the 'li' elements DO NOT contain the class 'show', then return false
                                     return false
                      }
               }
+
+              
      }
 
 
