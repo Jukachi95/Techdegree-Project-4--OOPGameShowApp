@@ -150,6 +150,7 @@ class Game {
 
               for(let i = 0; i < displayItems.length; i++){
                      // display all the li items
+                     // Check if all the list items in the loop contain the class of show
                      if(displayItems[i].className.includes('show')){
                                    return true
                      } else{
