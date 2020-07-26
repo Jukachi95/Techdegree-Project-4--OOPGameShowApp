@@ -146,11 +146,14 @@ class Game {
               // Or try li's with a class of show
               let displayItems = document.querySelectorAll('ul li');
 
+              
+
               for(let i = 0; i < displayItems.length; i++){
-                     if(displayItems[i].className.includes('show') && this.missed !=5){
-                                   console.log("Win")
+                     // display all the li items
+                     if(displayItems[i].className.includes('show')){
+                                   return true
                      } else{
-                            console.log("Other")
+                                    return false
                      }
               }
      }
