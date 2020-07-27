@@ -174,9 +174,9 @@ class Game {
 
                             body.innerHTML = `
                             <div class="main-container">
-                            <div id="overlay" class="start">
+                            <div id="overlay" class="win">
 				<h2 class="title">Phrase Hunter</h2>
-				<h1 id="game-over-message">Great Job</h1>
+				<h1 id="game-over-message">Great Job!</h1>
 				<button id="btn__reset">Start Game</button>
                             </div>
                             </div>
