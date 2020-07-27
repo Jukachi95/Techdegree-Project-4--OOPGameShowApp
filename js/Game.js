@@ -166,6 +166,14 @@ class Game {
        //  If the player has used all 5 guesses and doesnt have the answer
        gameOver(gameWon) {
 
+                     if(gameWon == true){
+                            // Display the winning HTML
+                            // Grab the main-container or change the current page(body)
+
+                            let body = document.querySelector('body')
+                            
+                     }
+
        }
 
 
