@@ -155,18 +155,20 @@ class Game {
                             // If all of the 'li' elements DO NOT contain the class 'show', then return false
                                     return false
                      }
-              }
+              } 
 
-              
+
      }
 
 
 
 
-       //  
-       gameOver() {
+       //  If the player has used all 5 guesses and doesnt have the answer
+       gameOver(gameWon) {
 
        }
+
+
 }
 
 
