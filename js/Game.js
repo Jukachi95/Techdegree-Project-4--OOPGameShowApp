@@ -122,6 +122,16 @@ class Game {
                             displayHeart[4].src = 'images/lostHeart.png';
 
                             //  Once the value of 5 has been reached, the gameOver() method is called
+                            let body = document.querySelector('body')
+
+                            body.innerHTML = `
+                            <div class="main-container">
+                            <div id="overlay" class="lose">
+				<h2 class="title">Phrase Hunter</h2>
+				<h1 id="game-over-message">Sorry, better luck next time</h1>
+				<button id="btn__reset">Start Game</button>
+                            </div>
+                            </div>
                      }
 
 
