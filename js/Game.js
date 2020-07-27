@@ -171,7 +171,16 @@ class Game {
                             // Grab the main-container or change the current page(body)
 
                             let body = document.querySelector('body')
-                            
+
+                            body.innerHTML = `
+                            <div class="main-container">
+                            <div id="overlay" class="start">
+				<h2 class="title">Phrase Hunter</h2>
+				<h1 id="game-over-message">Great Job</h1>
+				<button id="btn__reset">Start Game</button>
+                            </div>
+                            </div>
+                            `
                      }
 
        }
