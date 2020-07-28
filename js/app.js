@@ -33,8 +33,10 @@ document.getElementById('btn__reset').addEventListener('click',()=>{
 
 // Click event listener for onscreen keyboard
 
-let clickButton = document.querySelector('.key')
-clickButton.addEventListener('click', )
+let clickButton = document.querySelector('#qwerty')
+clickButton.addEventListener('click',()=>{
+    console.log("hi")
+})
 
 
 // Query Selectors 
