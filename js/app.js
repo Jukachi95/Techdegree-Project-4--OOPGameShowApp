@@ -31,7 +31,10 @@ document.getElementById('btn__reset').addEventListener('click',()=>{
 // Call the methods on the game variable
 
 
+// Click event listener for onscreen keyboard
 
+let clickButton = document.querySelector('.key')
+clickButton.addEventListener('click', )
 
 
 // Query Selectors 

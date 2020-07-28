@@ -131,7 +131,7 @@ class Game {
 				<h1 id="game-over-message">Sorry, better luck next time</h1>
 				<button id="btn__reset">Start Game</button>
                             </div>
-                            </div>
+                            </div>`
                      }
 
 
