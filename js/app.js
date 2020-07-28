@@ -31,12 +31,24 @@ document.getElementById('btn__reset').addEventListener('click',()=>{
 // Call the methods on the game variable
 
 
+
+
 // Click event listener for onscreen keyboard
 
-let clickButton = document.querySelector('#qwerty')
-clickButton.addEventListener('click',()=>{
-    console.log("hi")
+// Select the main parent 
+let clickButton = document.querySelectorAll('.key');
+
+// Set the event listener to the clickButton so all the buttons that are clicked will count towards it
+    
+    for(let i = 0; i < clickButton.length; i++){
+
+
+        clickButton[i].addEventListener('click',()=>{
+            console.log("hi")
 })
+
+    }
+    
 
 
 // Query Selectors 
