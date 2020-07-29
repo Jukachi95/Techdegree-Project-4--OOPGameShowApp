@@ -44,7 +44,8 @@ let clickButton = document.querySelectorAll('.key');
 
 
         clickButton[i].addEventListener('click',()=>{
-            console.log("hi")
+            
+            game.handleInteraction(clickButton[i])
 })
 
     }

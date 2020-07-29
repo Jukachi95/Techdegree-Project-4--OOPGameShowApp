@@ -63,9 +63,9 @@ class Game {
 
 
        //  
-       handleInteraction() {
+       handleInteraction(button) {
 
-
+              console.log(button)
        }
 
 
