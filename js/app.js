@@ -43,9 +43,9 @@ let clickButton = document.querySelectorAll('.key');
     for(let i = 0; i < clickButton.length; i++){
 
 
-        clickButton[i].addEventListener('click',()=>{
+        clickButton[i].addEventListener('click',(e)=>{
             
-            game.handleInteraction(clickButton[i])
+            game.handleInteraction(e.target)
 })
 
     }
@@ -56,3 +56,7 @@ let clickButton = document.querySelectorAll('.key');
  let startButton = document.getElementById('game__reset')
 
  let keyButons = document.querySelectorAll('key')
+
+
+
+//   game.handleInteraction(clickButton[i].innerHTML) --- initial event listener code

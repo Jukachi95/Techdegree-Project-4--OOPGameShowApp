@@ -65,11 +65,15 @@ class Game {
        //  
        handleInteraction(button) {
 
-              if(this.activePhrase.checkLetter(button) == true){
-                            this.showMatchedLetter(button)
-              } else{
-                     this.removeLife()
-              } 
+              // Check if the letter pressed is matched on screen
+
+              button.className += ' wrong'
+              console.log(button)
+              // if(this.activePhrase.checkLetter(button)){
+              //               this.showMatchedLetter(button)
+              // } else if(this.activePhrase.checkLetter(button) != true){
+              //        this.removeLife()
+              // } 
        }
 
 
