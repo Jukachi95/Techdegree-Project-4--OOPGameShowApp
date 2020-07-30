@@ -67,12 +67,11 @@ class Game {
 
               // Check if the letter pressed is matched on screen
 
-              button.className += ' wrong'
+              button.className += ' chosen'
               console.log(button)
               // if(this.activePhrase.checkLetter(button)){
+
               //               this.showMatchedLetter(button)
-              // } else if(this.activePhrase.checkLetter(button) != true){
-              //        this.removeLife()
               // } 
        }
 
