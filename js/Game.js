@@ -65,7 +65,11 @@ class Game {
        //  
        handleInteraction(button) {
 
-              console.log(button)
+              if(this.activePhrase.checkLetter(button) == true){
+                            this.showMatchedLetter(button)
+              } else{
+                     this.removeLife()
+              } 
        }
 
 
