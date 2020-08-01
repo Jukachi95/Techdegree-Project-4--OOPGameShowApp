@@ -67,12 +67,21 @@ class Game {
 
               // Check if the letter pressed is matched on screen
 
-              button.className += ' chosen'
-              console.log(button)
-              // if(this.activePhrase.checkLetter(button)){
+       //       this.activePhrase.showMatchedLetter(button)
+       // this.activePhrase.checkLetter(button.innerHTML)
 
-              //               this.showMatchedLetter(button)
-              // } 
+       // console.log(this.activePhrase.phrase)
+
+              if(this.activePhrase.phrase.includes(button.innerHTML)){
+
+                     button.className += ' disabled chosen'
+                     console.log(button)
+                     this.activePhrase.showMatchedLetter(button.innerHTML)
+
+              } else if(!this.activePhrase.phrase.includes(button.innerHTML)){
+                     button.className += ' disabled wrong'
+                     console.log(button)
+              }
        }
 
 
