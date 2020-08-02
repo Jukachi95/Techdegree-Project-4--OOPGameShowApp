@@ -74,13 +74,16 @@ class Game {
 
               if(this.activePhrase.phrase.includes(button.innerHTML)){
 
-                     button.className += ' disabled chosen'
+                     button.className += ' chosen'
+                     button.disabled = true;
                      console.log(button)
                      this.activePhrase.showMatchedLetter(button.innerHTML)
 
               } else if(!this.activePhrase.phrase.includes(button.innerHTML)){
                      button.className += ' disabled wrong'
                      console.log(button)
+                     button.disabled = true;
+                     game.removeLife()
               }
        }
 
