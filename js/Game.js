@@ -78,6 +78,7 @@ class Game {
                      button.disabled = true;
                      console.log(button)
                      this.activePhrase.showMatchedLetter(button.innerHTML)
+                     game.checkForWin()
 
               } else if(!this.activePhrase.phrase.includes(button.innerHTML)){
                      button.className += ' disabled wrong'
