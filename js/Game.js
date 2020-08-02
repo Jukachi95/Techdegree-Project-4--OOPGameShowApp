@@ -67,8 +67,6 @@ class Game {
 
               // Check if the letter pressed is matched on screen
 
-       //       this.activePhrase.showMatchedLetter(button)
-       // this.activePhrase.checkLetter(button.innerHTML)
 
        // console.log(this.activePhrase.phrase)
 
@@ -78,13 +76,16 @@ class Game {
                      button.disabled = true;
                      console.log(button)
                      this.activePhrase.showMatchedLetter(button.innerHTML)
-                     game.checkForWin()
+                     // game.checkForWin()
+                     // game.gameOver(game.checkForWin())
+                     
 
               } else if(!this.activePhrase.phrase.includes(button.innerHTML)){
-                     button.className += ' disabled wrong'
+                     button.className += ' wrong'
                      console.log(button)
                      button.disabled = true;
                      game.removeLife()
+                     
               }
        }
 
@@ -172,7 +173,7 @@ class Game {
 
               // Select all of the li elements
               let displayItems = document.querySelectorAll('ul li');
-
+              
               
               // Loop through the li elements
               for(let i = 0; i < displayItems.length; i++){
@@ -211,12 +212,17 @@ class Game {
                             </div>
                             </div>
                             `
-                     }
+                     } 
 
        }
 
 
 }
+
+
+
+
+
 
 
 
