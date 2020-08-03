@@ -76,8 +76,8 @@ class Game {
                      button.disabled = true;
                      console.log(button)
                      this.activePhrase.showMatchedLetter(button.innerHTML)
-                     // game.checkForWin()
-                     // game.gameOver(game.checkForWin())
+                    
+                     game.gameOver(game.checkForWin())
                      
 
               } else if(!this.activePhrase.phrase.includes(button.innerHTML)){
@@ -172,21 +172,29 @@ class Game {
 
 
               // Select all of the li elements
-              let displayItems = document.querySelectorAll('ul li');
+              let displayItems = document.querySelectorAll('li.hide');
               
+              if(displayItems.length > 0){
+                     return false
+              } else{
+                     return true
+              }
               
-              // Loop through the li elements
-              for(let i = 0; i < displayItems.length; i++){
+              // // Loop through the li elements
+              // for(let i = 0; i < displayItems.length; i++){
                      
-                     // Check if all the list items in the loop contain the class of show
-                     if(displayItems[i].className.includes('show')){
-                            // If all of the 'li' elements contain the class 'show', then return true
-                                   return true
-                     } else{
-                            // If all of the 'li' elements DO NOT contain the class 'show', then return false
-                                    return false
-                     }
-              } 
+              //        // Check if all the list items in the loop contain the class of show
+              //        if(!displayItems[i].className.includes('show')){
+              //               // If all of the 'li' elements contain the class 'show', then return true
+              //                      return false
+              //        }
+              //        // } else{
+              //        //        // If all of the 'li' elements DO NOT contain the class 'show', then return false
+              //        //                return true
+              //        // }
+              // } 
+
+              // return true
 
 
      }

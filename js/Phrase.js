@@ -45,7 +45,7 @@
                                     
 
 
-                                            if(splitPhrase[i] == ""){
+                                            if(splitPhrase[i] == "" || splitPhrase[i] == " "){
                                                                    
                                                         // Add the class name for space
                                                         liEl.className = 'space'
