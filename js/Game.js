@@ -16,7 +16,7 @@ class Game {
        createPhrases() {
 
               // An array of new Phrase obects that will be looped through
-              let phrases = [new Phrase("You forget a thousand things everyday"), new Phrase("Avengers Assemble"), new Phrase("Come with me if you want to live"), new Phrase("Eureka"), new Phrase("Hello World")]
+              let phrases = [new Phrase("Yahtzee"), new Phrase("Avengers Assemble"), new Phrase("Phrasing"), new Phrase("Eureka"), new Phrase("Hello World")]
 
 
               return phrases
@@ -209,34 +209,34 @@ class Game {
                             // Display the winning HTML
                             // Grab the main-container or change the current page(body)
 
-                            let body = document.querySelector('body')
+                            let gameOverText = document.querySelector('#game-over-message')
+                            let overlay = document.querySelector('#overlay')
 
-                            body.innerHTML = `
-                            <div class="main-container">
-                            <div id="overlay" class="win">
-				<h2 class="title">Phrase Hunter</h2>
-				<h1 id="game-over-message">Great Job!</h1>
-				<button id="btn__reset">Start Game</button>
-                            </div>
-                            </div>
-                            `
+                            gameOverText.innerHTML = 'Great Job!'
+                            overlay.style.display = 'flex'
+                            overlay.className = 'win'
+                            
+
+                           let mainContainer = document.querySelector('.main-container');
+                           mainContainer.appendChild()
                      } 
 
        }
 
 
-       resetGame(){
-              // List items for removal
-              let listItems = document.querySelector('ul')
+       // resetGame(){
+       //        // List items for removal
+       //        let listItems = document.querySelector('ul')
 
-              listItems.remove(listItems.children)
-       //    // Remove classes
-       // //    for(let i = 0; i < listItems.length; i++){
-       // //        listItems[i].remove()
-       // //    }
               
+       // //    Remove classes
+       //    for(let i = 0; i < listItems.length; i++){
        //        listItems.removeChild(childNodes[i])
-          }
+       //    }
+              
+       // //        listItems.removeChild(childNodes[i])
+       // // listItems.remove(listItems.children)
+       //    }
 
 }
 
