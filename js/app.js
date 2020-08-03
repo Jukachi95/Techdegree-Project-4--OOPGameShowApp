@@ -13,14 +13,21 @@ let logPhrase = (phrase)=> {console.log(phrase.phrase)}
 // Declare game variable
 let game;
 
+       
+
 // Set an event listener on the HTML button
 document.getElementById('btn__reset').addEventListener('click',()=>{
+
+    
+
     // Once clicked, 
     // Instantiate a new Game object within the game variable
     game = new Game()
 
     // Call the startGame method on the newly created Game object
     game.startGame()
+
+    //  game.resetGame()
 })
 
 

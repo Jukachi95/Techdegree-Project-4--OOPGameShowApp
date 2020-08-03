@@ -225,6 +225,19 @@ class Game {
        }
 
 
+       resetGame(){
+              // List items for removal
+              let listItems = document.querySelector('ul')
+
+              listItems.remove(listItems.children)
+       //    // Remove classes
+       // //    for(let i = 0; i < listItems.length; i++){
+       // //        listItems[i].remove()
+       // //    }
+              
+       //        listItems.removeChild(childNodes[i])
+          }
+
 }
 
 
