@@ -217,8 +217,7 @@ class Game {
                             overlay.className = 'win'
                             
 
-                           let mainContainer = document.querySelector('.main-container');
-                           mainContainer.appendChild()
+                          
                      } 
 
        }
