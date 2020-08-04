@@ -34,10 +34,8 @@ document.getElementById('btn__reset').addEventListener('click',()=>{
     // Call the startGame method on the newly created Game object
     game.startGame()
 
-    // game.resetGame()
-    //  
 
-    
+    // Grab all the buttons with a .key class
     let listBtn = document.querySelectorAll('.key');
 
     console.log(listBtn)
@@ -49,11 +47,16 @@ document.getElementById('btn__reset').addEventListener('click',()=>{
     // let chosen = 'chosen'
     // let wrong = 'wrong'
 
+    // Loop through the buttons 
     for(let i = 0; i < listBtn.length; i++){
+        // If the button includes the className of chosen
         if(listBtn[i].className.includes('chosen')){
+            // replace chosen with an empty string
                 listBtn[i].className = clickButton[i].className.replace('chosen', " ")
 
+             // If the button includes the className of chosen
         } if( listBtn[i].className.includes('wrong')){
+             // replace chosen with an empty string
             listBtn[i].className = clickButton[i].className.replace('wrong', " ")
         }
     }
@@ -66,7 +69,6 @@ document.getElementById('btn__reset').addEventListener('click',()=>{
 // const phrase = new Phrase(randomPhrase.phrase)
 // phrase.addPhraseToDisplay()
 
-// Call the methods on the game variable
 
 
 
