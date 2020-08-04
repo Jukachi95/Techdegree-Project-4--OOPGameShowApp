@@ -24,6 +24,14 @@ document.getElementById('btn__reset').addEventListener('click',()=>{
 
     listItems.innerHTML = ''
 
+    let clickButton = document.querySelectorAll('.key');
+
+    for(let i = 0; i < clickButton.length; i++){
+        if(clickButton[i].className.contains('chosen') || clickButton[i].className.contains('wrong')){
+
+        }
+    }
+
     
 
     // Once clicked, 
