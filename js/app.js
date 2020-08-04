@@ -24,13 +24,6 @@ document.getElementById('btn__reset').addEventListener('click',()=>{
 
     listItems.innerHTML = ''
 
-    let clickButton = document.querySelectorAll('.key');
-
-    for(let i = 0; i < clickButton.length; i++){
-        if(clickButton[i].className.contains('chosen') || clickButton[i].className.contains('wrong')){
-
-        }
-    }
 
     
 
@@ -43,6 +36,27 @@ document.getElementById('btn__reset').addEventListener('click',()=>{
 
     // game.resetGame()
     //  
+
+    
+    let listBtn = document.querySelectorAll('.key');
+
+    console.log(listBtn)
+
+    // for(let i = 0; i < listBtn.length; i++){
+    //     console.log(listBtn[i].className)
+    // }
+
+    // let chosen = 'chosen'
+    // let wrong = 'wrong'
+
+    for(let i = 0; i < listBtn.length; i++){
+        if(listBtn[i].className.includes('chosen')){
+                listBtn[i].className = clickButton[i].className.replace('chosen', " ")
+
+        } if( listBtn[i].className.includes('wrong')){
+            listBtn[i].className = clickButton[i].className.replace('wrong', " ")
+        }
+    }
 
   
 })
