@@ -18,6 +18,12 @@ let game;
 // Set an event listener on the HTML button
 document.getElementById('btn__reset').addEventListener('click',()=>{
 
+    // 
+    let listItems = document.querySelector('ul')
+
+
+    listItems.innerHTML = ''
+
     
 
     // Once clicked, 
@@ -27,7 +33,10 @@ document.getElementById('btn__reset').addEventListener('click',()=>{
     // Call the startGame method on the newly created Game object
     game.startGame()
 
-    //  game.resetGame()
+    // game.resetGame()
+    //  
+
+  
 })
 
 

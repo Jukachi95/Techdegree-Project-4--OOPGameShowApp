@@ -219,19 +219,19 @@ class Game {
        }
 
 
-       // resetGame(){
-       //        // List items for removal
-       //        let listItems = document.querySelector('ul')
+       resetGame(){
+              // List items for removal
+              let listItems = document.querySelector('ul')
 
+
+              listItems.innerHTML = ''
               
-       // //    Remove classes
-       //    for(let i = 0; i < listItems.length; i++){
+       //    Remove classes
+         
+              
        //        listItems.removeChild(childNodes[i])
-       //    }
-              
-       // //        listItems.removeChild(childNodes[i])
-       // // listItems.remove(listItems.children)
-       //    }
+       // listItems.remove(listItems.children)
+          }
 
 }
 
