@@ -52,15 +52,22 @@ document.getElementById('btn__reset').addEventListener('click',()=>{
         // If the button includes the className of chosen
         if(listBtn[i].className.includes('chosen')){
             // replace chosen with an empty string
-                listBtn[i].className = clickButton[i].className.replace('chosen', " ")
+                listBtn[i].className = clickButton[i].className.replace('chosen', "")
+                listBtn[i].disabled = false
 
              // If the button includes the className of chosen
         } if( listBtn[i].className.includes('wrong')){
              // replace chosen with an empty string
-            listBtn[i].className = clickButton[i].className.replace('wrong', " ")
+            listBtn[i].className = clickButton[i].className.replace('wrong', "")
+            listBtn[i].disabled = false
         }
     }
 
+    let displayHearts = document.querySelectorAll('li img');
+
+    for(let i = 0; i < displayHearts.length; i++){
+        displayHearts[i].src = 'images/liveHeart.png'
+    }
   
 })
 
