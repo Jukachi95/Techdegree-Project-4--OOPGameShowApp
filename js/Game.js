@@ -85,9 +85,13 @@ class Game {
                      
 
               } else if(!this.activePhrase.phrase.includes(button.innerHTML)){
+                     // Give the button a class of chosen to show it is wrong..
                      button.className += ' wrong'
-                     console.log(button)
+                     
+                     // Disable the button so that it can't be clicked again
                      button.disabled = true;
+
+                     
                      game.removeLife()
                      
               }
