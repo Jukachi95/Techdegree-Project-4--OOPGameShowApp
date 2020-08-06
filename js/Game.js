@@ -150,12 +150,21 @@ class Game {
                             // Then the heart image with an index of [4], will be given a different src attribute
                             displayHeart[4].src = 'images/lostHeart.png';
 
-                            //  Once the value of 5 has been reached, the gameOver() method is called
+                            //  Once the value of 5 has been reached, the game over message is displayed
+                            
+                            // Get the selector where the message will be stored
                             let gameOverText = document.querySelector('#game-over-message')
-                            let overlay = document.querySelector('#overlay')
 
+                            // Grab the overlay
+                            let overlay = document.querySelector('#overlay')
+                            
+                            // Change the text of the game-over-message 
                             gameOverText.innerHTML = 'Sorry, better luck next time!'
+
+                            // Display to flex so that the container is centered
                             overlay.style.display = 'flex'
+
+                            // Change the class name of the overlay to display the red background
                             overlay.className = 'lose'
                      }
 
