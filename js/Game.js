@@ -62,13 +62,11 @@ class Game {
 
 
 
-       //  
+       //  Handle the interaction for the game
        handleInteraction(button) {
 
               // Check if the letter pressed is matched on screen
 
-
-       // console.log(this.activePhrase.phrase)
 
               if(this.activePhrase.phrase.includes(button.innerHTML)){
 
