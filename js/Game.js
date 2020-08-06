@@ -218,19 +218,6 @@ class Game {
        }
 
 
-       resetGame(){
-              // List items for removal
-              let listItems = document.querySelector('ul')
-
-
-              listItems.innerHTML = ''
-              
-       //    Remove classes
-         
-              
-       //        listItems.removeChild(childNodes[i])
-       // listItems.remove(listItems.children)
-          }
 
 }
 
