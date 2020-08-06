@@ -171,11 +171,6 @@ class Game {
 
               }
 
-              //  
-
-
-
-
        }
 
 
@@ -184,31 +179,18 @@ class Game {
        checkForWin() {
 
 
-              // Select all of the li elements
-              let displayItems = document.querySelectorAll('li.hide');
-              
-              if(displayItems.length > 0){
-                     return false
-              } else{
-                     return true
-              }
-              
-              // // Loop through the li elements
-              // for(let i = 0; i < displayItems.length; i++){
+                     // Select all of the li elements with the class of 'hide'
+                     let displayItems = document.querySelectorAll('li.hide');
                      
-              //        // Check if all the list items in the loop contain the class of show
-              //        if(!displayItems[i].className.includes('show')){
-              //               // If all of the 'li' elements contain the class 'show', then return true
-              //                      return false
-              //        }
-              //        // } else{
-              //        //        // If all of the 'li' elements DO NOT contain the class 'show', then return false
-              //        //                return true
-              //        // }
-              // } 
-
-              // return true
-
+                     
+                     // If the number of li's with class of 'hide' is greater than 0...
+                     
+                     if(displayItems.length > 0){
+                            // Return false, as the player has not displayed all of the letters
+                            return false
+                     } else{
+                            return true
+                     }
 
      }
 
@@ -270,3 +252,20 @@ class Game {
                 //         display[index].src = 'images/lostHeart.png'
                 //     }
                 // })
+
+
+                        // // Loop through the li elements
+              // for(let i = 0; i < displayItems.length; i++){
+                     
+              //        // Check if all the list items in the loop contain the class of show
+              //        if(!displayItems[i].className.includes('show')){
+              //               // If all of the 'li' elements contain the class 'show', then return true
+              //                      return false
+              //        }
+              //        // } else{
+              //        //        // If all of the 'li' elements DO NOT contain the class 'show', then return false
+              //        //                return true
+              //        // }
+              // } 
+
+              // return true
