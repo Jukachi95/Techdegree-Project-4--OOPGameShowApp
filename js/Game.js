@@ -91,7 +91,7 @@ class Game {
                      // Disable the button so that it can't be clicked again
                      button.disabled = true;
 
-                     
+                     // Remove a life
                      game.removeLife()
                      
               }
