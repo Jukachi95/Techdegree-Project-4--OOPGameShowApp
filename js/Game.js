@@ -67,14 +67,20 @@ class Game {
 
               // Check if the letter pressed is matched on screen
 
-
+              // If the current phrase(this.activePhrase) includes a letter from the innerHTML..
               if(this.activePhrase.phrase.includes(button.innerHTML)){
 
+                     // Give the button a class of chosen to show it is correct..
                      button.className += ' chosen'
+
+                     // Disable the button so that it can't be clicked again
                      button.disabled = true;
-                     console.log(button)
+                     
+                     // Run the showMatchedLetter method, using the button that was pressed as an argument
                      this.activePhrase.showMatchedLetter(button.innerHTML)
                     
+                     // Call the gameOver method, using the value for checkForWin()
+                     // If the value is true, the 'Great Job' screen will display
                      game.gameOver(game.checkForWin())
                      
 
