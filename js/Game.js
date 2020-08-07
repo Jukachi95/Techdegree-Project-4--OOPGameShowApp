@@ -197,22 +197,28 @@ class Game {
 
 
 
-       //  If the player has used all 5 guesses and doesnt have the answer
+       // Check if the player has won the game
        gameOver(gameWon) {
 
+                     // If the value passed in to the method is true....
                      if(gameWon == true){
-                            // Display the winning HTML
-                            // Grab the main-container or change the current page(body)
-
+                            
+                            // Grab the selector for the text box
                             let gameOverText = document.querySelector('#game-over-message')
-                            let overlay = document.querySelector('#overlay')
 
+                            // Select the overlay
+                            let overlay = document.querySelector('#overlay')
+                            
+                            // Change the text to 'Great Job'
                             gameOverText.innerHTML = 'Great Job!'
+
+                            // Display the overlay as 'flex' so that it the styling is centered
+                            // 'Flex' is also the display property of the default screen 
                             overlay.style.display = 'flex'
+
+                            // Change the className to win to display a green color for the overlay
                             overlay.className = 'win'
                             
-
-                          
                      } 
 
        }
