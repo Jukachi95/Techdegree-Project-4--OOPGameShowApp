@@ -149,7 +149,7 @@ class Game {
                             // If this.missed has been incremented to reach a value of 5, when the method has been called again
                             // Then the heart image with an index of [4], will be given a different src attribute
                             displayHeart[4].src = 'images/lostHeart.png';
-
+                                          // 
                             //  Once the value of 5 has been reached, the game over message is displayed
                             
                             // Get the selector where the message will be stored
