@@ -110,66 +110,69 @@ class Game {
               // Using the DOM to access the images that are inside the 'li' elements
               let displayHeart = document.querySelectorAll('li img')
 
+              // Access the heart container using bracket notation
+              // E.g. if this.missed = 2, the heart with an 'index' value of 1 will be selected
+              displayHeart[this.missed-1].src = 'images/lostHeart.png';
 
-              // Loop through the items as querySelectorAll provides a HTML Collection
-              for (let i = 0; i < displayHeart.length; i++) {
-
-
-                     // As this.missed has been incremented, if the value is equal to 1 on the first method call
-
-                     if (this.missed == 1) {
-
-                            // Then the heart image with an index of [0], will be given a different src attribute
-                            displayHeart[0].src = 'images/lostHeart.png';
+              // // Loop through the items as querySelectorAll provides a HTML Collection
+              // for (let i = 0; i < displayHeart.length; i++) {
 
 
-                     } if (this.missed == 2) {
+              //        // As this.missed has been incremented, if the value is equal to 1 on the first method call
 
-                            // If this.missed has been incremented to reach a value of 2, when the method has been called again
-                            // Then the heart image with an index of [1], will be given a different src attribute
-                            displayHeart[1].src = 'images/lostHeart.png';
+              //        if (this.missed == 1) {
 
-
-                     } if (this.missed == 3) {
+              //               // Then the heart image with an index of [0], will be given a different src attribute
+              //               displayHeart[0].src = 'images/lostHeart.png';
 
 
-                            // If this.missed has been incremented to reach a value of 3, when the method has been called again
-                            // Then the heart image with an index of [2], will be given a different src attribute
-                            displayHeart[2].src = 'images/lostHeart.png';
+              //        } if (this.missed == 2) {
+
+              //               // If this.missed has been incremented to reach a value of 2, when the method has been called again
+              //               // Then the heart image with an index of [1], will be given a different src attribute
+              //               displayHeart[1].src = 'images/lostHeart.png';
 
 
-                     } if (this.missed == 4) {
+              //        } if (this.missed == 3) {
 
-                            // If this.missed has been incremented to reach a value of 4, when the method has been called again
-                            // Then the heart image with an index of [3], will be given a different src attribute
-                            displayHeart[3].src = 'images/lostHeart.png';
 
-                     } if (this.missed == 5) {
+              //               // If this.missed has been incremented to reach a value of 3, when the method has been called again
+              //               // Then the heart image with an index of [2], will be given a different src attribute
+              //               displayHeart[2].src = 'images/lostHeart.png';
 
-                            // If this.missed has been incremented to reach a value of 5, when the method has been called again
-                            // Then the heart image with an index of [4], will be given a different src attribute
-                            displayHeart[4].src = 'images/lostHeart.png';
-                                          // 
-                            //  Once the value of 5 has been reached, the game over message is displayed
+
+              //        } if (this.missed == 4) {
+
+              //               // If this.missed has been incremented to reach a value of 4, when the method has been called again
+              //               // Then the heart image with an index of [3], will be given a different src attribute
+              //               displayHeart[3].src = 'images/lostHeart.png';
+
+              //        } if (this.missed == 5) {
+
+              //               // If this.missed has been incremented to reach a value of 5, when the method has been called again
+              //               // Then the heart image with an index of [4], will be given a different src attribute
+              //               displayHeart[4].src = 'images/lostHeart.png';
+              //                             // 
+              //               //  Once the value of 5 has been reached, the game over message is displayed
                             
-                            // Get the selector where the message will be stored
-                            let gameOverText = document.querySelector('#game-over-message')
+              //               // Get the selector where the message will be stored
+              //               let gameOverText = document.querySelector('#game-over-message')
 
-                            // Grab the overlay
-                            let overlay = document.querySelector('#overlay')
+              //               // Grab the overlay
+              //               let overlay = document.querySelector('#overlay')
                             
-                            // Change the text of the game-over-message 
-                            gameOverText.innerHTML = 'Sorry, better luck next time!'
+              //               // Change the text of the game-over-message 
+              //               gameOverText.innerHTML = 'Sorry, better luck next time!'
 
-                            // Display to flex so that the container is centered
-                            overlay.style.display = 'flex'
+              //               // Display to flex so that the container is centered
+              //               overlay.style.display = 'flex'
 
-                            // Change the class name of the overlay to display the red background
-                            overlay.className = 'lose'
-                     }
+              //               // Change the class name of the overlay to display the red background
+              //               overlay.className = 'lose'
+              //        }
 
 
-              }
+              // }
 
        }
 
