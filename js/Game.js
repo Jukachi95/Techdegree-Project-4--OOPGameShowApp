@@ -81,7 +81,7 @@ class Game {
                     
                      // Call the gameOver method, using the value for checkForWin()
                      // If the value is true, the 'Great Job' screen will display
-                     game.gameOver(game.checkForWin())
+                     // game.gameOver(game.checkForWin())
                      
 
               } else if(!this.activePhrase.phrase.includes(button.innerHTML)){
@@ -95,6 +95,8 @@ class Game {
                      game.removeLife()
                      
               }
+
+              game.gameOver(game.checkForWin())
        }
 
 
@@ -166,7 +168,8 @@ class Game {
                             // Change the className to win to display a green color for the overlay
                             overlay.className = 'win'
                             
-                     // } else if(gameWon == false){
+                     } 
+                     // else if(gameWon == false){
 
                      //         // Grab the selector for the text box
                      //         let gameOverText = document.querySelector('#game-over-message')
