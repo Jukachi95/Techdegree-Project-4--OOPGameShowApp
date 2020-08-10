@@ -114,8 +114,10 @@ class Game {
               // E.g. if this.missed = 2, the heart with an 'index' value of 1 will be selected
               displayHeart[this.missed-1].src = 'images/lostHeart.png';
 
-             
+       //       if(displayHeart){
 
+       //       }
+       //        gameOver(checkForWin())
        }
 
 
@@ -164,25 +166,25 @@ class Game {
                             // Change the className to win to display a green color for the overlay
                             overlay.className = 'win'
                             
-                     } else if(gameWon = false){
+                     // } else if(gameWon == false){
 
-                             // Grab the selector for the text box
-                             let gameOverText = document.querySelector('#game-over-message')
+                     //         // Grab the selector for the text box
+                     //         let gameOverText = document.querySelector('#game-over-message')
 
-                             // Select the overlay
-                             let overlay = document.querySelector('#overlay')
+                     //         // Select the overlay
+                     //         let overlay = document.querySelector('#overlay')
                              
-                             // Change the text to 'Great Job'
-                             gameOverText.innerHTML = 'Sorry, try again!'
+                     //         // Change the text to 'Great Job'
+                     //         gameOverText.innerHTML = 'Sorry, try again!'
  
-                             // Display the overlay as 'flex' so that it the styling is centered
-                             // 'Flex' is also the display property of the default screen 
-                             overlay.style.display = 'flex'
+                     //         // Display the overlay as 'flex' so that it the styling is centered
+                     //         // 'Flex' is also the display property of the default screen 
+                     //         overlay.style.display = 'flex'
  
-                             // Change the className to win to display a green color for the overlay
-                             overlay.className = 'lose'
+                     //         // Change the className to win to display a green color for the overlay
+                     //         overlay.className = 'lose'
                              
-                     }
+                     // }
 
        }
 
