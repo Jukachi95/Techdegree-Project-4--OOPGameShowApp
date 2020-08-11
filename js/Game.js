@@ -81,8 +81,11 @@ class Game {
                     
                      // Call the gameOver method, using the value for checkForWin()
                      // If the value is true, the 'Great Job' screen will display
-                     // game.gameOver(game.checkForWin())
-                     
+                    let gameWin = game.checkForWin()
+                    
+                     if(gameWin == true){
+                            game.gameOver(gameWin)
+                     }
 
               } else if(!this.activePhrase.phrase.includes(button.innerHTML)){
                      // Give the button a class of chosen to show it is wrong..
@@ -96,7 +99,8 @@ class Game {
                      
               }
 
-              game.gameOver(game.checkForWin())
+            
+             
        }
 
 
@@ -116,10 +120,21 @@ class Game {
               // E.g. if this.missed = 2, the heart with an 'index' value of 1 will be selected
               displayHeart[this.missed-1].src = 'images/lostHeart.png';
 
-       //       if(displayHeart){
 
-       //       }
-       //        gameOver(checkForWin())
+
+                                   // If this.missed has reached 5...
+                            if(this.missed == 5){
+
+                                   // There are no hearts remaining
+                                   // Create a variable to visualize this and set it to false
+                                   let heartsRemaining = false
+
+                                   // Call the gameOver method and run the `false` conditional
+                                   game.gameOver(heartsRemaining)
+
+                            }
+
+
        }
 
 
@@ -169,25 +184,25 @@ class Game {
                             overlay.className = 'win'
                             
                      } 
-                     // else if(gameWon == false){
+                     else if(gameWon == false){
 
-                     //         // Grab the selector for the text box
-                     //         let gameOverText = document.querySelector('#game-over-message')
+                             // Grab the selector for the text box
+                             let gameOverText = document.querySelector('#game-over-message')
 
-                     //         // Select the overlay
-                     //         let overlay = document.querySelector('#overlay')
+                             // Select the overlay
+                             let overlay = document.querySelector('#overlay')
                              
-                     //         // Change the text to 'Great Job'
-                     //         gameOverText.innerHTML = 'Sorry, try again!'
+                             // Change the text to 'Great Job'
+                             gameOverText.innerHTML = 'Sorry, try again!'
  
-                     //         // Display the overlay as 'flex' so that it the styling is centered
-                     //         // 'Flex' is also the display property of the default screen 
-                     //         overlay.style.display = 'flex'
+                             // Display the overlay as 'flex' so that it the styling is centered
+                             // 'Flex' is also the display property of the default screen 
+                             overlay.style.display = 'flex'
  
-                     //         // Change the className to win to display a green color for the overlay
-                     //         overlay.className = 'lose'
+                             // Change the className to win to display a green color for the overlay
+                             overlay.className = 'lose'
                              
-                     // }
+                     }
 
        }
 
