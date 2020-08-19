@@ -18,7 +18,6 @@ document.getElementById('btn__reset').addEventListener('click',()=>{
     // Reset the ul items
     listItems.innerHTML = ''
 
-
     // Once clicked, 
     // Instantiate a new Game object within the game variable
     game = new Game()
@@ -54,7 +53,6 @@ document.getElementById('btn__reset').addEventListener('click',()=>{
                     }
             }
 
-    
                             //  Select all the heart images
                                 let displayHearts = document.querySelectorAll('li img');
 
