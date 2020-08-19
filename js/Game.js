@@ -122,17 +122,17 @@ class Game {
 
 
 
-                                   // If this.missed has reached 5...
-                            if(this.missed == 5){
+              // If this.missed has reached 5...
+              if(this.missed == 5){
 
-                                   // There are no hearts remaining
-                                   // Create a variable to visualize this and set it to false
-                                   let heartsRemaining = false
+                     // There are no hearts remaining
+                     // Create a variable to visualize this and set it to false
+                     let heartsRemaining = false
 
-                                   // Call the gameOver method and run the `false` conditional
-                                   game.gameOver(heartsRemaining)
+                     // Call the gameOver method and run the `false` conditional
+                     game.gameOver(heartsRemaining)
 
-                            }
+              }
 
 
        }
