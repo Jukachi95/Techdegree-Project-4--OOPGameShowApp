@@ -34,6 +34,7 @@ document.getElementById('btn__reset').addEventListener('click',()=>{
  
             // Loop through the buttons 
             for(let i = 0; i < listBtn.length; i++){
+                
                     // If the button includes the className of chosen
                     if(listBtn[i].className.includes('chosen')){
                             // Replace chosen class name with an empty string
