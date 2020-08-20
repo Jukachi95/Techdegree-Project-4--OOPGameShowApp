@@ -184,7 +184,7 @@ class Game {
                             overlay.className = 'win'
                             
                      } 
-                     else if(gameWon == false){
+                        else if(gameWon == false){
 
                              // Grab the selector for the text box
                              let gameOverText = document.querySelector('#game-over-message')
