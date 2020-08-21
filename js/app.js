@@ -88,9 +88,9 @@ let clickButton = document.querySelectorAll('.key');
 
 
 // Query Selectors 
- let startButton = document.getElementById('game__reset')
+ let startButton = document.getElementById('game__reset');
 
- let keyButtons = document.querySelectorAll('key')
+ let keyButtons = document.querySelectorAll('key');
 
 
 
