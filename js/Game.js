@@ -146,7 +146,6 @@ class Game {
                      // Select all of the li elements with the class of 'hide'
                      let displayItems = document.querySelectorAll('li.hide');
                      
-                     
                      // If the number of li's with class of 'hide' is greater than 0...
                      
                      if(displayItems.length > 0){
