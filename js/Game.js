@@ -122,7 +122,7 @@ class Game {
 
 
 
-              // If this.missed has reached 5...
+              // If this.missed has a value of reached 5...
               if(this.missed == 5){
 
                      // There are no hearts remaining
