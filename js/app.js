@@ -92,6 +92,7 @@ let clickButton = document.querySelectorAll('.key');
 // Start Button
  let startButton = document.getElementById('game__reset');
 
+//  Buttons keypad
  let keyButtons = document.querySelectorAll('key');
 
 
